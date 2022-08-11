@@ -2,7 +2,7 @@ import ReactDOM from "react-dom/client";
 import { Provider } from "react-redux";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import store from "./store";
-import App from "./app";
+import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import News from "./pages/News";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -14,7 +14,7 @@ root.render(
   <Provider store={store}>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/" element={<Home />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/login" element={<Login />} />
         <Route path="/news" element={<News />} />
